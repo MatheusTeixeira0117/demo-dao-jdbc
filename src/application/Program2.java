@@ -14,6 +14,18 @@ public class Program2 {
 		Department newdp = new Department(8, "RH");
 		departmentDao.insert(newdp);
 		System.out.println("OK! You have entered a new department: " + newdp);
+		
+		System.out.println("==== TESTE: 2 update implementation //DepartmentDaoJDBC");
+		Department dpD = departmentDao.findById(6);
+		dpD.setName("Food");
+		departmentDao.update(dpD);
+		System.out.println("OK! you made an update in department: " + dpD);
+		
+		
 	}
 
 }
+
+
+
+
